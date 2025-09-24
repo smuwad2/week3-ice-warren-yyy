@@ -10,38 +10,35 @@
 </head>
 
 <body>
-    <div class="container-fluid mt-5">
+    <div class="container mt-5">
         <form>
             <div class="row g-3">
-                <div class="col-sm">
+                <div class="col-md-6 col-lg-4 mb-3">
                     <label for="fullName" class="form-label">Full Name</label>
                     <input type="text" class="form-control" id="fullName">
                 </div>
 
                 <!-- Email -->
-                <div class="col-sm">
+                <div class="col-md-6 col-lg-4 mb-3">
                     <label for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="email">
                 </div>
 
                 <!-- Gender -->
-
-                    <div class="col-md-4">
-                        <label>Gender</label>
-                        <div>
-                            <input type="radio" name="gender" id="male" value="male" class="form-check-input">
-                            <label for="male" class="form-check-label">Male</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="gender" id="female" value="female" class="form-check-input">
-                            <label for="female" class="form-check-label">Female</label>
-                        </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <label class="form-label d-block">Gender</label>
+                    <div class="form-check d-inline-block me-3">
+                        <input type="radio" class="form-check-input" name="gender" id="male" value="male">
+                        <label for="male" class="form-check-label">Male</label>
                     </div>
-            </div>
+                    <div class="form-check d-inline-block">
+                        <input type="radio" class="form-check-input" name="gender" id="female" value="female">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+                </div>
 
                 <!-- Country -->
-            <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <label for="country" class="form-label">Country</label>
                     <select id="country" class="form-select">
                         <option selected>Select your country</option>
@@ -52,18 +49,16 @@
                 </div>
 
                 <!-- Subscribe -->
-
-                    <div class="mt-4 col-md-4">
+                <div class="col-lg-4">
+                    <div class="form-check mt-4">
                         <input type="checkbox" id="subscribe" class="form-check-input">
                         <label for="subscribe" class="form-check-label">
                             Subscribe to newsletter
                         </label>
                     </div>
-
-            </div>
+                </div>
 
                 <!-- Message -->
-            <div>
                 <div>
                     <label for="message" class="form-label">Message</label>
                     <textarea id="message" rows="4" class="form-control"></textarea>
